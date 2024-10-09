@@ -1,9 +1,12 @@
 {
   "name": "bookradio",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Audiobook",
+  "main": "app.js",
   "scripts": {
+    "build": "tsc",
+    "start": "node dist/app.js",
+    "dev": "ts-node src/app.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -15,6 +18,10 @@
     "pg": "^8.13.0"
   },
   "devDependencies": {
-    "prisma": "^5.20.0"
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.7.5",
+    "prisma": "^5.20.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
   }
 }
